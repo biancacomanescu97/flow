@@ -66,7 +66,7 @@ init flags url key =
 
 view : Model -> Browser.Document Msg
 view model =
-    { title = "Elm Bootstrap"
+    { title = "FLOW"
     , body =
         [ div []
               [ CND.stylesheet
