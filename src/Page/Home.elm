@@ -1,9 +1,24 @@
 module Page.Home exposing (..)
 
-import Html exposing (Html, text, h1, div, img)
+import Html exposing (Html, div, video)
 import Html.Attributes exposing (..)
+import Html exposing (video)
+import Json.Encode exposing (bool)
 
 view : Html msg
 view =
-    div [ style "text-align" "center" ] 
-        [ img [ src "/assets/images/work-in-progress.gif" ] [] ]
+    div [ style "position" "absolute"
+        , style "top" "0"
+        , style "bottom" "0"
+        , style "z-index" "-1"
+        ] 
+        [ video [ src "/assets/videos/Yoga.mp4"
+                , attribute "autoplay" "true"
+                , property "muted" (Json.Encode.bool True)
+                , property "loop" (Json.Encode.bool True)
+                , preload "none"
+                , style "height" "100%" 
+                , style "width" "100%"
+                , style "object-fit" "cover"
+                ] []
+        ]

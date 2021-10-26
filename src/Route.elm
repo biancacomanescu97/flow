@@ -1,8 +1,5 @@
 module Route exposing (..)
 
-import Bootstrap.Navbar as Navbar
-import Bootstrap.Modal as Modal
-import Browser.Navigation as Navigation
 import Url exposing (Url)
 import Url.Parser as UrlParser exposing ((</>), Parser, s, top)
 

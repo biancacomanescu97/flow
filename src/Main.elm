@@ -1,15 +1,11 @@
 module Main exposing (main)
 
 import Bootstrap.CDN as CND
-import Bootstrap.Button as Button
-import Bootstrap.Grid as Grid
-import Bootstrap.Form.Input as Input
 import Bootstrap.Navbar as Navbar
 import Browser.Navigation as Navigation
-import Bootstrap.Utilities.Spacing as Spacing
 import Browser exposing (UrlRequest)
 import Color exposing (..)
-import Html exposing (Html, div, text, h1, h2)
+import Html exposing (Html, div, text)
 import Html.Attributes exposing (..)
 import Json.Decode as Decode
 import Url exposing (Url)
