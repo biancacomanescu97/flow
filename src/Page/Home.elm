@@ -14,8 +14,8 @@ view =
         ] 
         [ video [ src "/assets/videos/Yoga.mp4"
                 , attribute "autoplay" "true"
-                , property "muted" (Json.Encode.bool True)
-                , property "loop" (Json.Encode.bool True)
+                , property "muted" (bool True)
+                , property "loop" (bool True)
                 , preload "none"
                 , style "height" "100%" 
                 , style "width" "100%"
